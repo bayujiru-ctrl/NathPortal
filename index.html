@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nath List | Sci-Fi Edition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Background dengan gradasi luar angkasa */
+            background: radial-gradient(circle at center, #1c1c1e 0%, #0f0f1a 100%);
+            color: #e0e0e0;
+            font-family: 'Rajdhani', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            padding: 30px 15px;
+            overflow-x: hidden;
+        }
+
+        /* Efek cahaya di belakang */
+        body::before {
+            content: "";
+            position: fixed;
+            top: -10%;
+            left: -10%;
+            width: 40%;
+            height: 40%;
+            background: rgba(0, 255, 255, 0.05);
+            filter: blur(100px);
+            z-index: -1;
+        }
+
+        /* Container Glassmorphism */
+        .glass-panel {
+            width: 100%;
+            max-width: 420px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(0, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.8);
+            position: relative;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Header Gaya Sci-Fi */
+        .header-sci {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .title-glow {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            color: #ffffff;
+            text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+            margin-bottom: 5px;
+        }
+
+        .status-line {
+            font-size: 0.7rem;
+            color: #1c1c1e;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.8;
+        }
+
+        /* Bio Text */
+        .bio-box {
+            background: rgba(0, 0, 0, 0.3);
+            border-left: 3px solid #FFB400;
+            padding: 15px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            color: #b0b0d0;
+            line-height: 1.5;
+        }
+
+        /* List Button */
+        .link-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .sci-btn {
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background: linear-gradient(90deg, rgba(0, 255, 255, 0.1), transparent);
+            border: 1px solid rgba(0, 255, 255, 0.3);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 600;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        /* Animasi garis pada tombol */
+        .sci-btn::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: #ffffff;
+            transition: 0.4s;
+        }
+
+        .sci-btn:hover {
+            background: rgba(0, 255, 255, 0.2);
+            border-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+            transform: translateX(5px);
+        }
+
+        .sci-btn:hover::after { width: 100%; }
+
+        .sci-btn i {
+            margin-right: 15px;
+            color: ##1c1c1e;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        .footer-terminal {
+            margin-top: 40px;
+            text-align: center;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 0.8rem;
+            color: #ffffff;
+            letter-spacing: 3px;
+        }
+
+        /* Countdown Style */
+        .countdown {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.75rem;
+            color: #00ffcc;
+            background: rgba(0, 255, 204, 0.05);
+            padding: 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="glass-panel">
+        <div class="header-sci">
+            <div class="status-line">Welcome!..</div>
+            <div class="title-glow">NATH LIST</div>
+            <div class="status-line">— 2026 Edition —</div>
+        </div>
+
+        <div class="bio-box">
+            <i class="fas fa-terminal" style="margin-right: 8px;"></i>
+            Hallo selamat datang di website mimin nath ini semua list media sosial yang mimin punya yaa termasuk link donate!
+        </div>
+
+        <div class="link-wrapper">
+            <a href="https://www.tiktok.com/@lenathzg?_r=1&_t=ZS-96DW4IwCBWe" class="sci-btn" target="_blank">
+                <i class="fab fa-tiktok"></i> TIKTOK MINECRAFT
+            </a>
+            
+            <a href="https://www.tiktok.com/@lenathsee?_r=1&_t=ZS-96DW6zF8BUL" class="sci-btn" target="_blank">
+                <i class="fab fa-tiktok"></i> TIKTOK JKT48
+            </a>
+            
+            <a href="https://whatsapp.com/channel/0029VbCNVebLY6dG6OYMEv3L" class="sci-btn" target="_blank">
+                <i class="fab fa-whatsapp"></i> channel
+            </a>
+            
+            <a href="https://saweria.co/nathcreator" class="sci-btn" target="_blank" style="border-color: rgba(255, 0, 255, 0.3); background: linear-gradient(90deg, rgba(255, 0, 255, 0.1), transparent);">
+                <i class="fas fa-satellite-dish" style="color: #ff00ff;"></i> DONATE / REQUEST
+            </a>
+        </div>
+
+        <div class="countdown" id="school-countdown">
+            Website by: gemini&lenath
+        </div>
+    </div>
+
+    <div class="footer-terminal">
+        Dashboard Nath
+    </div>
+
+</body>
+</html>
